@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activity to display data for a specific group -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_horizontal_margin"
+    android:layout_marginRight="@dimen/layout_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.GroupActivity"
+    android:id="@+id/group_activity_container">
+    <!-- Holds a 'Spinner' object to toggle between fragments
+         and a button to leave the current group -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/group_activity_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="20dp"/>
+        <Button
+            android:id="@+id/leave_group_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leave_group"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/standard_top_margin"/>
+    </RelativeLayout>
+    <!-- Current group name is displayed here -->
+    <TextView
+        android:id="@+id/group_name_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/standard_header_size"
+        android:gravity="center"
+        android:paddingTop="@dimen/paddingTop"/>
+    <!-- Content for each fragment is displayed here -->
+    <FrameLayout
+        android:id="@+id/group_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paddingTop"/>
+    <!-- Button to return to the Welcome Activity and view all groups -->
+    <!-- TODO: TEMPORARY
+    <Button
+        android:id="@+id/test_sample_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingTop"
+        android:text="'cj7545' message"/>
+    <Button
+        android:id="@+id/test_sample_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingTop"
+        android:text="'cj7545' task"/> -->
+</LinearLayout>

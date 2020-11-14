@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_horizontal_margin"
+    android:layout_marginRight="@dimen/layout_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".LoginActivityScreens.NewGroupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Used to display the current user at the top -->
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/username_text_size"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/paddingTop"
+            android:paddingRight="@dimen/paddingLarge"/>
+        <!-- TODO -->
+        <Button
+            android:id="@+id/to_all_groups_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paddingTop"
+            android:layout_weight="1"
+            android:text="@string/to_all_groups_page"/>
+        <!-- Logout button -->
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paddingTop"
+            android:layout_weight="1"
+            android:text="@string/logout"/>
+    </LinearLayout>
+    <!-- Section to add a new group -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:text="@string/new_group_header"
+        android:layout_gravity="center"
+        android:textSize="@dimen/welcome_activity_header"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:textSize="@dimen/standard_header2_size"
+        android:text="@string/new_group_name_header"/>
+    <EditText
+        android:id="@+id/new_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:hint="@string/group_name_hint"/>
+    <Button
+        android:id="@+id/new_group_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_group"
+        android:paddingTop="@dimen/paddingTop" />
+</LinearLayout>

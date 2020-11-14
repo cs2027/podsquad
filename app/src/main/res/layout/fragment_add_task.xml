@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment to add a new task & display all incomplete tasks -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.AddTaskFragment">
+    <!-- Section to add a new task -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_task_section"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_title_header"
+        android:textSize="@dimen/standard_text_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <EditText
+        android:id="@+id/new_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:hint="@string/task_title_hint"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_contents_header"
+        android:textSize="@dimen/standard_text_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <EditText
+        android:id="@+id/new_task_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:hint="@string/task_contents_hint"/>
+    <Button
+        android:id="@+id/add_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:text="@string/add_new_task"
+        android:clickable="true"
+        android:focusable="true"/>
+</LinearLayout>

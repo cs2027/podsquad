@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Welcome page for a user once they successfully login -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_horizontal_margin"
+    android:layout_marginRight="@dimen/layout_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".LoginActivityScreens.WelcomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Used to display the current user at the top -->
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/username_text_size"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/paddingTop"
+            android:paddingRight="@dimen/paddingLarge"/>
+        <!-- TODO -->
+        <Button
+            android:id="@+id/to_new_group_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paddingTop"
+            android:layout_weight="1"
+            android:text="@string/to_new_group_page"/>
+        <!-- Logout button -->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paddingTop"
+            android:layout_weight="1"
+            android:text="@string/logout"/>
+    </LinearLayout>
+    <!-- Display a RecyclerView list of all groups the user is a part of -->
+    <TextView
+        android:id="@+id/group_list_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_list_header"
+        android:layout_gravity="center"
+        android:textSize="@dimen/welcome_activity_header"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groups_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

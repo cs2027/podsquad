@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">PodSquad</string>
+
+    <!-- Common Strings -->
+    <string name="barrier">"     |     "</string>
+
+    <!-- Login/Register Page Strings -->
+    <string name="login_page_header"><b><u>Login Page</u></b></string>
+    <string name="register_page_header"><b><u>Register Page</u></b></string>
+    <string name="username_header"><b>Username</b></string>
+    <string name="username_hint">Enter your username here</string>
+    <string name="password_header"><b>Password</b></string>
+    <string name="password_hint">Enter your password here</string>
+    <string name="password_confirm"><b>Password (Confirm)</b></string>
+    <string name="password_confirm_hint">Re-enter your password here</string>
+    <string name="new_user"><b><u>New User?</u></b></string>
+    <string name="login">Login</string>
+    <string name="register">Click Here to Register</string>
+    <string name="to_login_page">Return to Login Page</string>
+    <string name="to_new_group_page">Create a New Group?</string>
+    <string name="to_all_groups_page">View All Groups</string>
+
+    <!-- Welcome Page Strings -->
+    <string name="group_list_header"><b><u>Groups</u></b></string>
+    <string name="new_group_header"><b><u>Create a New Group</u></b></string>
+    <string name="new_group_name_header"><u>New Group Name</u></string>
+    <string name="new_group_instructions">To create a new group,
+        please enter a group name below and press the "'Add New Group'" button.</string>
+    <string name="group_name_hint">Enter new group name here</string>
+    <string name="add_new_group">Add New Group</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_group">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Group Page Strings -->
+    <string name="group_homepage_text">Welcome to the group!
+    To get started please select a page from the dropdown menu above.</string>
+    <string name="group_homepage_header"><b><u>Homepage</u></b></string>
+    <string name="group_name_header"><u>Current Group Name</u></string>
+    <string name="tasks_complete">Completed Tasks</string>
+    <string name="tasks_incomplete">Incomplete Tasks</string>
+    <string name="messages">Messages</string>
+    <string name="members_list">Group Members</string>
+    <string name="add_members">Add Members</string>
+    <string name="edit_group_name">Edit Group Name</string>
+    <string name="update_group_name">Update Group Name</string>
+    <string name="view_all_groups">View All Groups</string>
+    <string name="leave_group">Leave Group</string>
+
+    <!-- Strings representing different fragments available on each group page -->
+    <string-array name="group_activity_fragments">
+        <item>Homepage</item>
+        <item>Add Members</item>
+        <item>Add New Task</item>
+        <item>Completed Tasks</item>
+        <item>Edit Group Name</item>
+        <item>Group Members</item>
+        <item>Incomplete Tasks</item>
+        <item>Messages</item>
+        <item>View All Groups</item>
+    </string-array>
+
+    <!-- Fragment ('Add Member') Strings -->
+    <string name="num_new_users"><u>Number of New Users</u></string>
+    <string name="num_new_users_hint">Enter how many new users to add</string>
+    <string name="users_list"><u>List of New Users</u></string>
+    <string name="users_list_hint">Enter a list of all new users to add</string>
+    <string name="add_users_instructions">Please enter the usernames of all
+        users you would like to add as a comma-separated list (ex. username1, username2, username3).</string>
+    <string name="add_new_users">Add New Users</string>
+
+    <!-- Fragment ('Members List') Strings -->
+    <string name="members_list_header"><u>List of Group Members</u></string>
+
+    <!-- Fragment (Incomplete and Complete Tasks) Strings -->
+    <string name="complete_tasks_header"><u>List of Completed Tasks (Newest at Top)</u></string>
+    <string name="incomplete_tasks_header"><u>List of Incomplete Tasks (Newest at Top)</u></string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="new_task_section"><u>New Task Section</u></string>
+    <string name="new_task_instructions">To add a new task, type in a header/title
+    for your task, as well a longer description of your task. Then, press the "'Add New Task'" button.</string>
+    <string name="task_title_header"><u>Task Title</u></string>
+    <string name="task_title_hint">Enter your task title here</string>
+    <string name="task_contents_header"><u>Task Description</u></string>
+    <string name="task_contents_hint">Enter a description for your task here</string>
+    <string name="task_user_header"><u>Posted By</u></string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="to_group_homepage">Back to Group Homepage</string>
+    <string name="save_task_changes">Save Changes</string>
+
+    <!-- Fragment ('Message') Strings -->
+    <string name="group_message_header"><u>Group Messages (Newest at Top)</u></string>
+    <string name="new_message_send">Send</string>
+
+    <!-- Keys to identify tags (see <GroupAdapter.java, IncompleteTaskAdapter.java, CompleteTaskAdapter.java> files -->
+    <string name="group_obj">groupObj</string>
+    <string name="user_obj">userObj</string>
+    <string name="task_obj">taskObj</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

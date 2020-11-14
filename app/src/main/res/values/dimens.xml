@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common styling -->
+    <dimen name="paddingLarge">30dp</dimen>
+    <dimen name="paddingTop">10dp</dimen>
+    <dimen name="rowPaddingTop">3dp</dimen>
+    <dimen name="paddingLeft">5dp</dimen>
+    <dimen name="paddingGeneral">5dp</dimen>
+    <dimen name="standard_text_size">16sp</dimen>
+    <dimen name="standard_header_size">32sp</dimen>
+    <dimen name="standard_header2_size">24sp</dimen>
+    <dimen name="standard_top_margin">10dp</dimen>
+
+    <!-- Side margin for various activities/fragments -->
+    <dimen name="layout_horizontal_margin">7dp</dimen>
+
+    <!-- Text size for first few initial screens -->
+    <dimen name="login_page_header">32sp</dimen>
+    <dimen name="register_page_header">32sp</dimen>
+    <dimen name="welcome_activity_header">32sp</dimen>
+
+    <!-- Login & register page styling -->
+    <dimen name="main_text_size">24sp</dimen>
+
+    <!-- Welcome page styling -->
+    <dimen name="username_text_size">24sp</dimen>
+    <dimen name="group_list_text_size">16sp</dimen>
+    <dimen name="instructions_text_size">16sp</dimen>
+
+    <!-- Group page styling -->
+    <dimen name="group_text_size">28sp</dimen>
+    <dimen name="group_subtext_size">14sp</dimen>
+    <dimen name="group_button_size">13sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment to add a new task & display all incomplete tasks -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.IncompleteTaskFragment"
+    android:id="@+id/incomplete_task_layout">
+    <!-- List of all incomplete tasks for a given group -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incomplete_tasks_header"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"/>\
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/incomplete_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"/>
+</LinearLayout>

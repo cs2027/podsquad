@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- List of all completed tasks for a given group -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.CompleteTaskFragment"
+    android:id="@+id/complete_task_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/complete_tasks_header"
+        android:textSize="@dimen/standard_header2_size"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/complete_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paddingTop"/>
+</LinearLayout>

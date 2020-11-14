@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout file to display information about a specific task -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_horizontal_margin"
+    android:layout_marginRight="@dimen/layout_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.TaskActivity">
+    <!-- Task title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:textSize="@dimen/standard_header2_size"
+        android:text="@string/task_title_header"/>
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_text_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Task contents -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"
+        android:text="@string/task_contents_header"/>
+    <TextView
+        android:id="@+id/task_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_text_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Task user (i.e. who posted the task) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"
+        android:text="@string/task_user_header"/>
+    <TextView
+        android:id="@+id/task_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Button to edit the current task -->
+    <Button
+        android:id="@+id/edit_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_task"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Button to delete the current task -->
+    <Button
+        android:id="@+id/delete_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_task"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Button to change task status (complete vs. incomplete) -->
+    <Button
+        android:id="@+id/change_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"/>
+    <!-- Button to return to group homepage -->
+    <Button
+        android:id="@+id/to_group_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_group_homepage"
+        android:padding="@dimen/paddingGeneral"/>
+</LinearLayout>

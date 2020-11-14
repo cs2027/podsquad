@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User login/logout page -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/layout_horizontal_margin"
+    android:layout_marginRight="@dimen/layout_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".LoginActivityScreens.LoginFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_page_header"
+        android:textSize="@dimen/login_page_header"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_header"
+        android:textSize="@dimen/main_text_size"
+        android:paddingTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paddingTop"
+        android:id="@+id/username_input"
+        android:hint="@string/username_hint"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_header"
+        android:textSize="@dimen/main_text_size"
+        android:paddingTop="@dimen/paddingTop"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paddingTop"
+        android:id="@+id/password_input"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:paddingTop="@dimen/paddingTop"
+        android:id="@+id/login_button"
+        android:clickable="true"
+        android:focusable="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user"
+        android:textSize="@dimen/main_text_size"
+        android:paddingTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:paddingTop="@dimen/paddingTop"
+        android:id="@+id/initial_register_button"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

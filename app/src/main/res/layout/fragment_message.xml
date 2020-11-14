@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment to display all current group messages -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.MessageFragment"
+    android:id="@+id/message_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/group_message_header"
+        android:textSize="@dimen/standard_header2_size"/>
+    <!-- Section to send a new message -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/new_message_layout">
+        <EditText
+            android:id="@+id/new_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/new_message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_message_send"
+            android:padding="@dimen/paddingGeneral"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+    <!-- RecyclerView object displaying all messages in a given group -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paddingTop"/>
+</LinearLayout>

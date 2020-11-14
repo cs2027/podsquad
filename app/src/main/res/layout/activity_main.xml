@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main activity when app first loads; initially starts off with login fragment -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivityScreens.MainActivity">
+    <!-- Layout for holding different fragments: login page, register page -->
+    <FrameLayout
+        android:id="@+id/frameLayout_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- TODO: TEMPORARY
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/test_button_delete"
+        android:text="Clear All Data"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/test_button_populate"
+        android:text="Populate Sample Data"/> -->
+</LinearLayout>

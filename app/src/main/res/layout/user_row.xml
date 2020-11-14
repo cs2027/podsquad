@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single row displaying a user's username;
+used in the RecyclerView in the <fragment_member_list.xml> file -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/user_row">
+    <TextView
+        android:id="@+id/user_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/rowPaddingTop"
+        android:textSize="@dimen/standard_text_size"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment to add new users to a group -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupActivityScreens.AddMemberFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/num_new_users"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <EditText
+        android:id="@+id/num_new_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="@dimen/paddingGeneral"
+        android:hint="@string/num_new_users_hint"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/users_list"
+        android:textSize="@dimen/standard_header2_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_users_instructions"
+        android:textSize="@dimen/standard_text_size"
+        android:padding="@dimen/paddingGeneral"/>
+    <EditText
+        android:id="@+id/list_new_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingGeneral"
+        android:hint="@string/users_list_hint"/>
+    <Button
+        android:id="@+id/add_new_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_users"
+        android:padding="@dimen/paddingGeneral"
+        android:clickable="true"
+        android:focusable="true"/>
+</LinearLayout>

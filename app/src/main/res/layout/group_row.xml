@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout corresponding to a single 'Group' object
+Part of a larger 'RecyclerView' object -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/group_row">
+    <!-- Displays the name of the given 'Group' object -->
+    <TextView
+        android:id="@+id/group_row_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/group_list_text_size"
+        android:paddingTop="@dimen/paddingTop" />
+    <!-- Displays whether the current user is the owner or a member of a group -->
+    <TextView
+        android:id="@+id/member_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/group_list_text_size"
+        android:paddingTop="@dimen/paddingTop" />
+</LinearLayout>
