@@ -10,3 +10,20 @@ Moreover, as is often the case in both small and large groups, you will need to 
 can send messages back and forth with the other members in real time, providing instant communication and feedback between the different members, much like any other texting platform would. 
 
 And finally, every individual's data is securely protected using the SHA-512 algorithm for password hashing to keep user data safe, making PodSquad a multi-purpose, simple, and secure app for almost anyone to use.
+
+## UI Demonstration
+
+### Initial Landing Page
+<img src="app/src/main/res/drawable/ui_demo/initial.JPG" height="600">
+
+------------------------------------------
+### Group Homepage 
+<img src="app/src/main/res/drawable/ui_demo/group_homepage.JPG" height="600">
+
+------------------------------------------
+### To-Do List Items
+<img src="app/src/main/res/drawable/ui_demo/todo_list.JPG" height="600">
+
+------------------------------------------
+### Group Chat/Messages
+<img src="app/src/main/res/drawable/ui_demo/messages.JPG" height="600">
